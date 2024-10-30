@@ -1,2 +1,2 @@
-# fermorugbyclub
+# Welcome
 Fermo Rugby Club website
