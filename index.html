@@ -1,10 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rugby Club Home</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: #FFFFFF;
+      background-color: #000000;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000000;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      color: #FF6A00;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #FFFFFF;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #FF6A00;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('hero-image.jpg'); /* Replace with actual image */
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 100px 20px;
+      color: #FFFFFF;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .hero .cta-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      margin: 10px;
+      color: #FFFFFF;
+      border-radius: 5px;
+    }
+
+    .cta-join {
+      background-color: #FF6A00;
+    }
+
+    .cta-events {
+      background-color: #000000;
+      border: 2px solid #FF6A00;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 40px 20px;
+    }
+
+    .about, .contact {
+      background-color: #E5E5E5;
+      color: #000000;
+      text-align: center;
+    }
+
+    .news-events {
+      background-color: #000000;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #FF6A00;
+      margin-bottom: 10px;
+    }
+
+    /* Button */
+    .btn {
+      background-color: #FF6A00;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000000;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <h1>Home</h1>
-    <p>Welcome to the home page.</p>    
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Fermo Rugby Club</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">News & Events</a>
+      <a href="#">Join Us</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Rugby Club</h1>
+    <p>Passion. Strength. Unity.</p>
+    <a href="#" class="cta-btn cta-join">Join the Team</a>
+    <a href="#" class="cta-btn cta-events">Upcoming Events</a>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Discover the history, mission, and values of our club. We are dedicated to building champions on and off the field.</p>
+    <a href="#" class="btn">Learn More</a>
+  </section>
+
+  <!-- News & Events Section -->
+  <section class="news-events">
+    <h2>News & Events</h2>
+    <p>Stay updated with our latest news and upcoming matches.</p>
+    <div>
+      <p><strong>Next Match:</strong> Saturday, 5 PM - Vs. Rival Team</p>
+      <p><strong>News:</strong> Our team wins the championship!</p>
+      <a href="#" class="btn">View All News & Events</a>
+    </div>
+  </section>
+
+  <!-- Join Us Section -->
+  <section class="join-us">
+    <h2>Join Us</h2>
+    <p>Become a part of a vibrant community. Access training, facilities, and exclusive events.</p>
+    <a href="#" class="btn">Sign Up Now</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us anytime.</p>
+    <p>Email: fermorugbyclub@gmail.com | Phone: (555) 123-4567</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Rugby Club. All rights reserved.</p>
+    <p>Follow us on 
+      <a href="#" style="color: #FF6A00;">Facebook</a>, 
+      <a href="#" style="color: #FF6A00;">Instagram</a>, 
+      <a href="#" style="color: #FF6A00;">Twitter</a>
+    </p>
+  </footer>
+
 </body>
 </html>
