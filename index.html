@@ -1,198 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rugby Club Home</title>
-  <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    /* Base Styles */
-    body {
-      font-family: Arial, sans-serif;
-      color: #FFFFFF;
-      background-color: #000000;
-      line-height: 1.6;
-    }
+  <title>Fermo Rugby Club</title>
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #000000;
-    }
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-    header .logo {
-      font-size: 1.5em;
-      color: #FF6A00;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: #FFFFFF;
-    }
-
-    nav a:hover {
-      border-bottom: 2px solid #FF6A00;
-    }
-
-    /* Hero Section */
-    .hero {
-      background-image: url('hero-image.jpg'); /* Replace with actual image */
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      padding: 100px 20px;
-      color: #FFFFFF;
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-
-    .hero .cta-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 1em;
-      margin: 10px;
-      color: #FFFFFF;
-      border-radius: 5px;
-    }
-
-    .cta-join {
-      background-color: #FF6A00;
-    }
-
-    .cta-events {
-      background-color: #000000;
-      border: 2px solid #FF6A00;
-    }
-
-    /* Section Styling */
-    section {
-      padding: 40px 20px;
-    }
-
-    .about, .contact {
-      background-color: #E5E5E5;
-      color: #000000;
-      text-align: center;
-    }
-
-    .news-events {
-      background-color: #000000;
-      color: #FFFFFF;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 2em;
-      color: #FF6A00;
-      margin-bottom: 10px;
-    }
-
-    /* Button */
-    .btn {
-      background-color: #FF6A00;
-      color: #FFFFFF;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #000000;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-  </style>
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
+
 <body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Fermo Rugby Club
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">Fermo Rugby Club</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">News & Events</a>
-      <a href="#">Join Us</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to Rugby Club</h1>
-    <p>Passion. Strength. Unity.</p>
-    <a href="#" class="cta-btn cta-join">Join the Team</a>
-    <a href="#" class="cta-btn cta-events">Upcoming Events</a>
-  </section>
-
-  <!-- About Us Section -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>Discover the history, mission, and values of our club. We are dedicated to building champions on and off the field.</p>
-    <a href="#" class="btn">Learn More</a>
-  </section>
-
-  <!-- News & Events Section -->
-  <section class="news-events">
-    <h2>News & Events</h2>
-    <p>Stay updated with our latest news and upcoming matches.</p>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#about_section" data-i18n="about_us">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#joinus_section" data-i18n="join_us" >Join Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-i18n="events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts_section" data-i18n="contacts">Contacts</a>
+                </li>
+              </ul>
+              <span class="nav-item" style="margin-left:  90px;" />
+              <div class="d-flex ml-auto flex-column ">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html" onclick="changeLanguage('it')">IT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html" onclick="changeLanguage('en')">EN</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- hero section -->
     <div>
-      <p><strong>Next Match:</strong> Saturday, 5 PM - Vs. Rival Team</p>
-      <p><strong>News:</strong> Our team wins the championship!</p>
-      <a href="#" class="btn">View All News & Events</a>
+      <img src="images/hero-bg.webp" alt="" class="hero_banner_img">
+      <!--<h1 style="color: white; position: absolute; top: 50%; left: 10%; ">Welcome to Fermo Rugby Club</h1>-->
+    </div>
+  </div>
+
+  <!-- how section -->
+  <section id="about_section" class="how_section layout_padding">
+    <div class="heading_container">
+      <h2 data-i18n="about_us"> About Us </h2>
+    </div>
+    <div class="how_container">
+      <div class="box">
+        <a href="#">
+          <div class="img-box">
+          <svg fill="#000000" height="200px" width="200px" version="1.1" id="People" viewBox="0 0 475.851 475.851" xml:space="preserve">
+            <g stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g>
+              <g>
+                <g>
+                  <g>
+                    <path d="M151.549,145.274c0,23.39,9.145,50.385,24.462,72.214c17.389,24.78,39.376,38.427,61.911,38.427 c22.534,0,44.521-13.647,61.91-38.428c15.317-21.828,24.462-48.824,24.462-72.213c0-47.626-38.746-86.372-86.372-86.372 C190.296,58.902,151.549,97.648,151.549,145.274z M237.922,73.902c39.354,0,71.372,32.018,71.372,71.372 c0,20.118-8.33,44.487-21.74,63.598c-14.29,20.364-32.38,32.043-49.632,32.043c-17.252,0-35.342-11.679-49.632-32.043 c-13.41-19.11-21.741-43.479-21.741-63.598C166.549,105.919,198.567,73.902,237.922,73.902z"></path>
+                    <path d="M302.372,239.167c-2.862-1.363-6.273-0.778-8.52,1.461c-16.775,16.728-36.117,25.569-55.935,25.569 c-19.821,0-39.158-8.841-55.923-25.567c-2.246-2.241-5.659-2.826-8.521-1.463c-25.254,12.022-46.628,30.829-61.811,54.388 c-15.596,24.2-23.84,52.277-23.84,81.195v0.121c0,2.116,0.894,4.134,2.461,5.556c40.492,36.722,92.922,56.945,147.633,56.945 s107.141-20.224,147.632-56.945c1.568-1.422,2.462-3.439,2.462-5.556v-0.121c0-28.918-8.242-56.995-23.834-81.194 C348.997,269.995,327.625,251.188,302.372,239.167z M237.918,422.372c-49.861,0-97.685-18.023-135.057-50.827 c0.583-24.896,7.956-48.986,21.411-69.865c12.741-19.77,30.322-35.823,51.058-46.676c18.746,17.157,40.285,26.193,62.588,26.193 c22.3,0,43.842-9.035,62.598-26.193c20.734,10.853,38.313,26.906,51.053,46.676c13.452,20.877,20.823,44.968,21.406,69.865 C335.602,404.349,287.778,422.372,237.918,422.372z"></path>
+                    <path d="M455.077,243.89c-13.23-20.532-31.856-36.923-53.864-47.399c-2.862-1.363-6.275-0.778-8.52,1.461 c-14.312,14.271-30.79,21.815-47.654,21.815c-9.142,0-18.184-2.205-26.873-6.553c-3.706-1.853-8.209-0.353-10.063,3.351 c-1.854,3.705-0.354,8.21,3.351,10.063c10.793,5.401,22.093,8.139,33.586,8.139c19.335,0,38.004-7.737,54.288-22.437 c17.504,9.298,32.348,22.934,43.141,39.685c11.445,17.763,17.756,38.243,18.338,59.416 c-18.524,16.158-40.553,28.449-63.91,35.634c-3.959,1.218-6.182,5.415-4.964,9.374c0.992,3.225,3.96,5.297,7.166,5.297 c0.73,0,1.474-0.107,2.208-0.333c26.509-8.154,51.435-22.362,72.082-41.088c1.568-1.422,2.462-3.439,2.462-5.556v-0.105 C475.85,289.45,468.666,264.98,455.077,243.89z"></path>
+                    <path d="M130.493,210.473c7.93,0,15.841-1.934,23.516-5.748c3.709-1.843,5.222-6.345,3.379-10.054 c-1.843-3.71-6.345-5.222-10.054-3.379c-5.582,2.774-11.248,4.18-16.841,4.18c-14.541,0-29.836-9.914-41.964-27.2 c-11.449-16.318-18.562-37.112-18.562-54.266c0-33.375,27.152-60.527,60.526-60.527c15.752,0,30.67,6.022,42.006,16.958 c2.98,2.875,7.729,2.792,10.604-0.19c2.876-2.981,2.791-7.729-0.19-10.604c-14.146-13.647-32.763-21.163-52.42-21.163 c-41.646,0-75.526,33.881-75.526,75.527c0,20.38,7.957,43.887,21.283,62.881C91.445,198.545,110.709,210.473,130.493,210.473z"></path>
+                    <path d="M61.034,340.143c-16.753-7.222-32.209-16.972-45.989-29.004c0.582-21.112,6.875-41.53,18.291-59.243 c10.761-16.698,25.561-30.294,43.01-39.566c16.239,14.662,34.856,22.376,54.139,22.376c11.587,0,22.969-2.785,33.829-8.277 c3.696-1.87,5.177-6.381,3.308-10.078c-1.869-3.697-6.381-5.177-10.078-3.308c-8.742,4.421-17.846,6.663-27.059,6.663 c-16.811,0-33.238-7.522-47.504-21.754c-2.246-2.24-5.658-2.825-8.521-1.462c-21.954,10.451-40.534,26.8-53.733,47.28 C7.167,264.811,0,289.221,0,314.362v0.103c0,2.116,0.894,4.134,2.461,5.556c15.629,14.174,33.338,25.579,52.634,33.897 c0.968,0.417,1.975,0.615,2.966,0.615c2.904,0,5.668-1.697,6.891-4.533C66.591,346.196,64.837,341.783,61.034,340.143z"></path>
+                    <path d="M69.854,351.003c-2.671,6.443,4.532,12.832,10.617,9.387c3.238-1.834,4.683-5.937,3.227-9.385 C81.291,344.86,72.32,345.053,69.854,351.003z"></path>
+                    <path d="M83.698,351.005C83.888,351.455,83.518,350.545,83.698,351.005L83.698,351.005z"></path>
+                    <path d="M303.345,70.438c11.336-10.936,26.254-16.958,42.006-16.958c33.374,0,60.526,27.152,60.526,60.527 c0,17.154-7.112,37.947-18.563,54.266c-12.128,17.286-27.424,27.2-41.964,27.2c-5.593,0-11.259-1.406-16.841-4.18 c-3.711-1.844-8.212-0.331-10.055,3.379c-1.843,3.709-0.33,8.21,3.379,10.054c7.675,3.814,15.587,5.748,23.517,5.748 c19.783,0,39.048-11.927,54.243-33.585c13.327-18.994,21.283-42.501,21.283-62.881c0-41.646-33.881-75.527-75.526-75.527 c-19.657,0-38.273,7.516-52.42,21.163c-2.981,2.875-3.066,7.624-0.19,10.604C295.614,73.229,300.363,73.314,303.345,70.438z"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          </div>
+        </a>
+        <div class="detail-box">
+          <a href="#">
+            <h5 data-i18n="people">People</h5>
+          </a>
+          <p data-i18n="people_description">
+            Management and Coaching Staff
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <a href="#"></a>
+          <div class="img-box">
+            <svg fill="#000000" height="200px" width="200px" version="1.1" id="Mission" viewBox="0 0 32 32" xml:space="preserve">
+              <g stroke-linecap="round" stroke-linejoin="round"></g>
+              <g>
+                <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style>
+                <line class="st0" x1="16" y1="16" x2="22" y2="10"></line>
+                <polygon class="st0" points="30,6 26,6 26,2 22,6 22,10 26,10 "></polygon>
+                <circle class="st0" cx="16" cy="16" r="6"></circle>
+                <path class="st0" d="M27,9c1.3,2,2,4.4,2,7c0,7.2-5.8,13-13,13S3,23.2,3,16S8.8,3,16,3c2.6,0,5,0.7,7,2"></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <div class="detail-box">
+          <a href="#">
+            <h5 data-i18n="mission">Mission</h5>
+          </a>
+          <p data-i18n="mission_description">
+            Our core values
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <a href="#">
+        <div class="img-box">
+          <svg viewBox="0 0 32 32" version="1.1" fill="#000000">
+            <g stroke-linecap="round" stroke-linejoin="round"></g>
+            <g transform="translate(-412.000000, -99.000000)" fill="#000000">
+              <path d="M442,124 C442,125.104 441.073,125.656 440,126 C440,126 434.557,127.515 429,128.977 L429,104 L440,101 C441.104,101 442,101.896 442,103 L442,124 L442,124 Z M427,128.998 C421.538,127.53 416,126 416,126 C414.864,125.688 414,125.104 414,124 L414,103 C414,101.896 414.896,101 416,101 L427,104 L427,128.998 L427,128.998 Z M440,99 C440,99 434.211,100.594 428.95,102 C428.291,102.025 427.627,102 426.967,102 C421.955,100.656 416,99 416,99 C413.791,99 412,100.791 412,103 L412,124 C412,126.209 413.885,127.313 416,128 C416,128 421.393,129.5 426.967,131 L428.992,131 C434.612,129.5 440,128 440,128 C442.053,127.469 444,126.209 444,124 L444,103 C444,100.791 442.209,99 440,99 L440,99 Z"> </path>
+            </g>
+          </svg>
+        </div>
+        </a>
+        <div class="detail-box">
+          <a href="#">
+            <h5 data-i18n="code_of_ethics">Code of Ethics</h5>
+          </a>
+          <p data-i18n="code_of_ethics_description">
+            Our code of ethics
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end how section -->
+
+
+  <!-- auto section -->
+
+  <section id="joinus_section" class="auto_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2 data-i18n="join_us">
+          Join Us
+        </h2>
+      </div>
+      <div class="box">
+        <div class="img-box">
+            <img src="images/join_us.jpg" alt="" style="border-radius: 25px;">
+        </div>
+        <div class="detail-box" style="font-size: large; margin-top: 20px;">
+          <p data-i18n="join_us_p1">
+            Ready to be part of our rugby family?
+          </p>
+          <p data-i18n="join_us_p2">
+            Whether you're an experienced player or new to the sport, we welcome all who share our passion.
+            Join our training sessions and discover the thrill of rugby in a supportive environment.
+          </p>
+          <p data-i18n="join_us_p3">
+            Contact us to learn more about our club and how you can get involved. We look forward to hearing from you!
+          </p>
+          <div class="btn-box">
+            <a href="">
+              Write us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end auto section -->
+
+  <!-- client section -->
+
+  <section id="contacts_section" class="client_section layout_padding-bottom"></section>
+    <div class="container">
+      <div class="heading_container">
+        <h2 data-i18n="contacts">
+          Contacts
+        </h2>
+      </div>
+      <div class="contact-section">
+        <div class="contact-info">
+            <i class="fas fa-phone-alt"></i> <!-- Phone Icon -->
+            <strong style="margin-right: 10px;">Phone:</strong>
+            <a href="tel:+393337584116">+39 333 758 4116</a>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i> <!-- Email Icon -->
+            <strong style="margin-right: 10px;">Email:</strong>
+            <a href="mailto:fermorugbyclub@gmail.com">fermorugbyclub@gmail.com</a>
+        </div>
+        <div class="contact-info">
+            <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
+            <strong style="margin-right: 10px;">Facebook:</strong>
+            <a href="https://www.facebook.com/fermorugbyclub" target="_blank">facebook.com/fermorugbyclub</a>
+        </div>
+        <div class="contact-info">
+            <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+            <strong style="margin-right: 10px;">Instagram:</strong>
+            <a href="https://www.instagram.com/fermorugbyclub" target="_blank">instagram.com/fermorugbyclub</a>
+        </div>
+    </div>
     </div>
   </section>
 
-  <!-- Join Us Section -->
-  <section class="join-us">
-    <h2>Join Us</h2>
-    <p>Become a part of a vibrant community. Access training, facilities, and exclusive events.</p>
-    <a href="#" class="btn">Sign Up Now</a>
+
+  <!-- end client section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <div class="info_logo">
+              <a href="index.html">
+                <span>
+                  Fermo Rugby Club
+                </span>
+              </a>
+            </div>
+            <p>Corso Cefalonia, 31</p>
+            <p>63900 - Fermo</p>
+            <p>Codice Fiscale: 02294250440</p>
+            <p>Codice FIR: 0644760</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions? Reach out to us anytime.</p>
-    <p>Email: fermorugbyclub@gmail.com | Phone: (555) 123-4567</p>
-  </section>
+  <!-- end info_section -->
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Rugby Club. All rights reserved.</p>
-    <p>Follow us on 
-      <a href="#" style="color: #FF6A00;">Facebook</a>, 
-      <a href="#" style="color: #FF6A00;">Instagram</a>, 
-      <a href="#" style="color: #FF6A00;">Twitter</a>
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2024 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
     </p>
-  </footer>
+  </section>
+  <!-- footer section -->
 
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/lang-i18.js"></script>
 </body>
+
 </html>
